@@ -1,3 +1,6 @@
+import head from 'next/head';
+import styles from '../styles/Home.module.scss';
+import '../styles/globals.scss';
 
 function App() {
     return (
