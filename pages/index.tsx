@@ -3,21 +3,20 @@ import styles from '../styles/Home.module.scss';
 
 function App() {
     return (
-        <div className="App">
-            <header className="App-header">
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
- 
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
+        <div className={styles.container}>
+            <title>Coup</title>
+            <h1 className={styles.title}>
+                Coup
+            </h1>
+            <body className={styles.body}>
+                <input className={styles.input} />
+                <div className={styles.button}>
+                    <p className={styles.buttonText}>Join Room</p>
+                </div>
+                <div className={styles.button}>
+                    <p className={styles.buttonText}>Create Room</p>
+                </div>
+            </body>
         </div>
     );
 }
