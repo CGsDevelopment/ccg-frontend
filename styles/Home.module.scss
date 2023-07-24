@@ -7,7 +7,6 @@ $primary-color: lightblue;
     width: 20vw;
     height: 55px;
     border-radius: 10px;
-    padding: 5px;
     background-color: azure;
     justify-content: center;
     align-items: center;
@@ -19,12 +18,12 @@ $primary-color: lightblue;
     padding: 10px;
     background-color: $primary-color;
     height: 100vh;
+    width: 100vw;
 }
 
 .title {
     font-family: 'Lucida Sans';
     font-size: $font-title;
-    // background-color: blue;
     text-align: center;
 }
 
