@@ -2,6 +2,8 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 // import { GetStaticPaths, GetStaticProps } from 'next';
 
+import { Game } from "../../src/models/game";
+
 import * as io from 'socket.io-client';
 
 const socket = io.connect('http://localhost:3001');
@@ -14,6 +16,8 @@ export default function Room() {
 
     const [message, setMessage] = useState("");
     const [msgReceived, setMsgReceived] = useState("");
+
+    const [game, setGame] = useState(new Game(3));
 
     useEffect(() => {
         if (!joined) {
