@@ -1,0 +1,42 @@
+$font-title: 32px;
+$primary-color: lightblue;
+
+@mixin buttonWrapper() {
+    display: flex;
+    min-width: 200px;
+    width: 20vw;
+    height: 55px;
+    border-radius: 10px;
+    background-color: azure;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: $primary-color;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.title {
+    font-family: 'Lucida Sans';
+    font-size: $font-title;
+}
+
+.button {
+    @include buttonWrapper();
+    cursor: pointer;
+}
+
+.input {
+    @include buttonWrapper();
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
