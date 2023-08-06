@@ -6,7 +6,7 @@ function App() {
     const router = useRouter();
     const [roomCode, setRoomCode] = useState("");
 
-    function handleInputChange(e: React.ChangeEvent<HTMLInputElement>) {
+    function handleRoomcodeChange(e: React.ChangeEvent<HTMLInputElement>) {
         setRoomCode(e.target.value.toUpperCase());
     }
 
@@ -37,7 +37,7 @@ function App() {
                 Coup
             </h1>
             <form className={styles.body} onSubmit={handleSubmit}>
-                <input className={styles.input} maxLength={4} value={roomCode} onChange={handleInputChange} />
+                <input placeholder='CODE' className={styles.input} maxLength={4} value={roomCode} onChange={handleRoomcodeChange} />
                 <button id="join" className={styles.button} disabled={roomCode.length !== 4}>
                     Join Room
                 </button>

@@ -12,16 +12,94 @@ $primary-color: lightblue;
     align-items: center;
 }
 
-.container {
+.lobbyContainer {
     display: flex;
     flex-direction: column;
     padding: 10px;
     background-color: $primary-color;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
     justify-content: center;
     align-items: center;
     row-gap: 10px;
+}
+
+.gameroomContainer {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: $primary-color;
+}
+
+.navbar {
+    display: flex;
+    border-bottom: 1px solid gray;
+    margin-bottom: 15px;
+}
+
+.navbarItemContainer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.playersContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.playerInfoContainer {
+    margin: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    background-color: rgb(113, 238, 238);
+    border-radius: 5px;
+}
+
+.deckContainer {
+    padding: 25px;
+}
+
+.selfContainer {
+    display: flex;
+    margin: 25px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    // justify-content: space-between;
+}
+
+.selfInfoContainer {
+    margin-right: 30px;
+}
+
+.actionsContainer {
+    display: flex;
+    flex-direction: column;
+    // flex: 1;
+    margin-left: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    row-gap: 10px;
+    border: 2px solid black;
+}
+
+.actionButton {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    background-color: rgb(185, 242, 247);
+    cursor: pointer;
+}
+
+.cardBack {
+    margin: 5px;
 }
 
 .title {
